@@ -1,0 +1,1387 @@
+
+		body:not(.bravada-landing-page) #container,
+		#colophon-inside,
+		.footer-inside,
+		#breadcrumbs-container-inside {
+			margin: 0 auto;
+			max-width: 1240px;
+		}
+
+		body:not(.bravada-landing-page) #container {
+			max-width: calc(1240px - 4em);
+		}
+
+		#primary {
+			width: 320px;
+		}
+
+		#secondary {
+			width: 320px;
+		}
+
+		#container.one-column .main {
+			width: 100%;
+		}
+
+		#container.two-columns-right #secondary {
+			float: right;
+		}
+
+		#container.two-columns-right .main,
+		.two-columns-right #breadcrumbs {
+			width: calc(100% - 320px);
+			float: left;
+		}
+
+		#container.two-columns-left #primary {
+			float: left;
+		}
+
+		#container.two-columns-left .main,
+		.two-columns-left #breadcrumbs {
+			width: calc(100% - 320px);
+			float: right;
+		}
+
+		#container.three-columns-right #primary,
+		#container.three-columns-left #primary,
+		#container.three-columns-sided #primary {
+			float: left;
+		}
+
+		#container.three-columns-right #secondary,
+		#container.three-columns-left #secondary,
+		#container.three-columns-sided #secondary {
+			float: left;
+		}
+
+		#container.three-columns-right #primary,
+		#container.three-columns-left #secondary {
+			margin-left: 0%;
+			margin-right: 0%;
+		}
+
+		#container.three-columns-right .main,
+		.three-columns-right #breadcrumbs {
+			width: calc(100% - 640px);
+			float: left;
+		}
+
+		#container.three-columns-left .main,
+		.three-columns-left #breadcrumbs {
+			width: calc(100% - 640px);
+			float: right;
+		}
+
+		#container.three-columns-sided #secondary {
+			float: right;
+		}
+
+		#container.three-columns-sided .main,
+		.three-columns-sided #breadcrumbs {
+			width: calc(100% - 640px);
+			float: right;
+		}
+
+		.three-columns-sided #breadcrumbs {
+			margin: 0 calc(0% + 320px) 0 -1920px;
+		}
+
+		html {
+			font-family: Muli;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 1.8;
+			;
+		}
+
+		#site-title {
+			font-family: Playfair Display;
+			font-size: 1.3em;
+			font-weight: 700;
+		}
+
+
+		nav#mobile-menu #mobile-nav a {
+			font-family: Playfair Display;
+			font-size: 2.5em;
+			font-weight: 700;
+			font-size: clamp(1.3rem, 5vw, 2.5em);
+			;
+		}
+
+		nav#mobile-menu #mobile-nav ul.sub-menu a {
+			font-size: clamp(1.1rem, 4vw, 2em);
+		}
+
+		nav#mobile-menu input[type=search] {
+			font-family: Playfair Display;
+		}
+
+		.widget-title,
+		#comments-title,
+		#reply-title,
+		.related-posts .related-main-title,
+		.main .author-info .page-title {
+			font-family: Playfair Display;
+			font-size: 1.2em;
+			font-weight: 700;
+			line-height: 2;
+			margin-bottom: 0.5em;
+			;
+		}
+
+		.widget-title::after,
+		#comments-title::after,
+		#reply-title::after,
+		.related-posts .related-main-title::after {
+			margin-bottom: 0.5em;
+		}
+
+		.widget-container {
+			font-family: Muli;
+			font-size: 1em;
+			font-weight: 400;
+		}
+
+		.widget-container ul li {
+			line-height: 1.8;
+			;
+		}
+
+		.entry-title,
+		.main .page-title {
+			font-family: Playfair Display;
+			font-size: 1.7em;
+			font-weight: 700;
+			;
+		}
+
+		body:not(.single) .entry-meta>span {
+			font-family: Muli;
+			font-size: 1em;
+			font-weight: 300;
+			;
+		}
+
+		/* single post titles/metas */
+		#header-page-title .entry-title,
+		.singular-title,
+		.lp-staticslider .staticslider-caption-title,
+		.seriousslider-theme .seriousslider-caption-title {
+			font-family: Playfair Display;
+			font-size: 5em;
+			font-weight: 700;
+			font-size: clamp(2.5em, 5vw, 5em);
+			line-height: 1.3;
+			;
+		}
+
+		.single .entry-meta>span {
+			font-family: Muli;
+			font-size: 1.1em;
+			font-weight: 300;
+			;
+		}
+
+		h1 {
+			font-size: 2.33em;
+		}
+
+		h2 {
+			font-size: 2.06em;
+		}
+
+		h3 {
+			font-size: 1.79em;
+		}
+
+		h4 {
+			font-size: 1.52em;
+		}
+
+		h5 {
+			font-size: 1.25em;
+		}
+
+		h6 {
+			font-size: 0.98em;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4 {
+			font-family: Playfair Display;
+			font-weight: 700;
+			;
+		}
+
+		.entry-content h1,
+		.entry-summary h1,
+		.entry-content h2,
+		.entry-summary h2,
+		.entry-content h3,
+		.entry-summary h3,
+		.entry-content h4,
+		.entry-summary h4,
+		.entry-content h5,
+		.entry-summary h5,
+		.entry-content h6,
+		.entry-summary h6 {
+			line-height: 1.2;
+			margin-bottom: 0.5em;
+		}
+
+		.lp-section-header .lp-section-desc,
+		.lp-box-title,
+		.lp-tt-title,
+		#nav-fixed a+a,
+		#nav-below span,
+		.lp-blocks.lp-blocks1 .lp-block .lp-block-readmore {
+			font-family: Playfair Display;
+		}
+
+		.lp-section-header .lp-section-title {
+			font-family: Muli;
+		}
+
+		blockquote cite {
+			font-family: Muli;
+		}
+
+		body {
+			color: #707070;
+			background-color: #F3F7F6;
+		}
+
+		.lp-staticslider .staticslider-caption-text a {
+			color: #FFFFFF;
+		}
+
+		#site-header-main,
+		.menu-search-animated .searchform input[type="search"],
+		#access .menu-search-animated .searchform,
+		.site-header-bottom-fixed,
+		.bravada-over-menu .site-header-bottom.header-fixed .site-header-bottom-fixed {
+			background-color: #FFFFFF;
+		}
+
+		.bravada-over-menu .site-header-bottom-fixed {
+			background: transparent;
+		}
+
+		.bravada-over-menu .header-fixed.site-header-bottom #site-title a,
+		.bravada-over-menu .header-fixed.site-header-bottom #site-description {
+			color: #f8b078;
+		}
+
+		.bravada-over-menu #site-title a,
+		.bravada-over-menu #site-description,
+		.bravada-over-menu #access>div>ul>li,
+		.bravada-over-menu #access>div>ul>li>a,
+		.bravada-over-menu .site-header-bottom:not(.header-fixed) #nav-toggle,
+		#breadcrumbs-container span,
+		#breadcrumbs-container a,
+		#breadcrumbs-container i {
+			color: #FFFFFF;
+		}
+
+		#bmobile #site-title a {
+			color: #f8b078;
+		}
+
+		#site-title a::before {
+			background: #f8b078;
+		}
+
+		body:not(.bravada-over-menu) .site-header-bottom #site-title a::before,
+		.bravada-over-menu .header-fixed.site-header-bottom #site-title a::before {
+			background: #000000;
+		}
+
+		body:not(.bravada-over-menu) .site-header-bottom #site-title a:hover {
+			background: #f8b078;
+		}
+
+		#site-title a:hover::before {
+			background: #000000;
+		}
+
+		#access>div>ul>li,
+		#access>div>ul>li>a,
+		.bravada-over-menu .header-fixed.site-header-bottom #access>div>ul>li:not([class*='current']),
+		.bravada-over-menu .header-fixed.site-header-bottom #access>div>ul>li:not([class*='current'])>a {
+			color: #444444;
+		}
+
+		.hamburger span {
+			background-color: #444444;
+		}
+
+		#mobile-menu,
+		nav#mobile-menu #mobile-nav a {
+			color: #FFFFFF;
+		}
+
+		nav#mobile-menu #mobile-nav>li.current_page_item>a,
+		nav#mobile-menu #mobile-nav>li.current-menu-item>a,
+		nav#mobile-menu #mobile-nav>li.current_page_ancestor>a,
+		nav#mobile-menu #mobile-nav>li.current-menu-ancestor>a,
+		nav#mobile-menu #mobile-nav a:hover {
+			color: #f8b078;
+		}
+
+		nav#mobile-menu {
+			color: #FFFFFF;
+			background-color: #06253a;
+		}
+
+		#mobile-nav .searchform input[type="search"] {
+			border-color: #FFFFFF;
+		}
+
+		.burgermenu-active.bravada-over-menu .site-header-bottom.header-fixed .site-header-bottom-fixed {
+			background-color: transparent;
+		}
+
+		.burgermenu-active.bravada-over-menu .site-header-bottom .hamburger span {
+			background-color: #FFFFFF;
+		}
+
+		.bravada-over-menu:not(.burgermenu-active) .site-header-bottom:not(.header-fixed) .hamburger span {
+			background-color: #FFFFFF;
+		}
+
+		.bravada-over-menu .header-fixed.site-header-bottom .side-section-element.widget_cryout_socials a:hover::before,
+		.side-section-element.widget_cryout_socials a:hover::before {
+			color: #FFFFFF;
+		}
+
+		#access ul.sub-menu li a,
+		#access ul.children li a,
+		.topmenu ul li a {
+			color: #FFFFFF;
+		}
+
+		#access ul.sub-menu li a,
+		#access ul.children li a {
+			background-color: #06253a;
+		}
+
+		#access ul.sub-menu li a:hover,
+		#access ul.children li a:hover {
+			color: #f8b078;
+		}
+
+		#access>div>ul>li.current_page_item>a,
+		#access>div>ul>li.current-menu-item>a,
+		#access>div>ul>li.current_page_ancestor>a,
+		#access>div>ul>li.current-menu-ancestor>a,
+		.bravada-over-menu .header-fixed.site-header-bottom #access>div>ul>li>a {
+			color: #f8b078;
+		}
+
+		#access ul.children>li.current_page_item>a,
+		#access ul.sub-menu>li.current-menu-item>a,
+		#access ul.children>li.current_page_ancestor>a,
+		#access ul.sub-menu>li.current-menu-ancestor>a {
+			opacity: 0.95;
+		}
+
+		#access>div>ul ul>li a:not(:only-child)::after {
+			border-left-color: #06253a;
+		}
+
+		#access>div>ul>li>ul::before {
+			border-bottom-color: #06253a;
+		}
+
+		#access ul li.special1>a {
+			background-color: #f0f0f0;
+		}
+
+		#access ul li.special2>a {
+			background-color: #444444;
+			color: #FFFFFF;
+		}
+
+		#access ul li.accent1>a {
+			background-color: #f8b078;
+			color: #FFFFFF;
+		}
+
+		#access ul li.accent2>a {
+			background-color: #000000;
+			color: #FFFFFF;
+		}
+
+		#access ul li.accent1>a:hover,
+		#access ul li.accent2>a:hover {
+			color: #FFFFFF;
+		}
+
+		#access>div>ul>li.accent1>a>span::before,
+		#access>div>ul>li.accent2>a>span::before {
+			background-color: #FFFFFF;
+		}
+
+		article.hentry,
+		body:not(.blog):not(.page-template-template-blog):not(.archive):not(.search) #container:not(.bravada-landing-page) .main,
+		body.bravada-boxed-layout:not(.bravada-landing-page) #container {
+			background-color: #FFFFFF;
+		}
+
+		.pagination span {
+			color: #000000;
+		}
+
+		.pagination a:hover {
+			background-color: #f8b078;
+			color: #FFFFFF;
+		}
+
+		#header-overlay,
+		.lp-staticslider::after,
+		.seriousslider-theme::after {
+			background-color: #06253a;
+			background: -webkit-linear-gradient(90deg, #06253a 0%, #06253a 100%);
+			background: linear-gradient(180deg, #06253a 0%, #06253a 100%);
+			opacity: 0.6;
+		}
+
+		#header-page-title #header-page-title-inside,
+		#header-page-title .entry-title,
+		#header-page-title .entry-meta span,
+		#header-page-title .entry-meta a,
+		#header-page-title .entry-meta time,
+		#header-page-title .entry-meta .icon-metas::before,
+		#header-page-title .byline,
+		#header-page-title #breadcrumbs-nav,
+		.lp-staticslider .staticslider-caption-inside,
+		.seriousslider-theme .seriousslider-caption-inside {
+			color: #FFFFFF;
+		}
+
+		#primary .widget-container {
+			background-color: #06253a;
+			border-color: #17364b;
+			padding: 1.5em 2.5em;
+		}
+
+		@media (max-width: 1024px) {
+			.cryout #container #primary .widget-container {
+				padding: 1em;
+			}
+		}
+
+		#secondary .widget-container {
+			background-color: #06253a;
+			border-color: #17364b;
+			padding: 1.5em 2.5em;
+		}
+
+		@media (max-width: 1024px) {
+			.cryout #container #secondary .widget-container {
+				padding: 1em;
+			}
+		}
+
+		#colophon,
+		#footer {
+			background-color: #06253a;
+			color: #DBDBDB;
+		}
+
+		.post-thumbnail-container .featured-image-overlay::before {
+			background-color: #f8b078;
+			background: -webkit-gradient(linear, left top, left bottom, from(#f8b078), to(#000000));
+			background: linear-gradient(to bottom, #f8b078, #000000);
+		}
+
+		.post-thumbnail-container .featured-image-overlay::after {
+			background-color: #f8b078;
+			background: -webkit-gradient(linear, left top, left bottom, from(#f8b078), to(#000000));
+			background: linear-gradient(to bottom, #000000, #f8b078);
+		}
+
+		.main #content-masonry .post-thumbnail-container:hover+.entry-after-image .entry-title a {
+			color: #f8b078;
+		}
+
+		@media (max-width: 720px) {
+			.bravada-magazine-one .main #content-masonry .post-thumbnail-container+.entry-after-image {
+				background-color: #FFFFFF;
+			}
+		}
+
+		.entry-title a:active,
+		.entry-title a:hover {
+			color: #f8b078;
+		}
+
+		span.entry-format {
+			color: #f8b078;
+		}
+
+		.main #content-masonry .format-link .entry-content a {
+			background-color: #f8b078;
+			color: #FFFFFF;
+		}
+
+		.main #content-masonry .format-link::after {
+			color: #FFFFFF;
+		}
+
+		.cryout article.hentry.format-image,
+		.cryout article.hentry.format-audio,
+		.cryout article.hentry.format-video {
+			background-color: #ffffff;
+		}
+
+		.format-aside,
+		.format-quote {
+			border-color: #eeeeee;
+		}
+
+		.single .author-info {
+			border-color: #eeeeee;
+		}
+
+		.entry-content h5,
+		.entry-content h6,
+		.lp-text-content h5,
+		.lp-text-content h6 {
+			color: #000000;
+		}
+
+		.entry-content blockquote::before,
+		.entry-content blockquote::after {
+			color: rgba(112, 112, 112, 0.2);
+		}
+
+		.entry-content h1,
+		.entry-content h2,
+		.entry-content h3,
+		.entry-content h4,
+		.lp-text-content h1,
+		.lp-text-content h2,
+		.lp-text-content h3,
+		.lp-text-content h4 {
+			color: #162521;
+		}
+
+		.entry-title,
+		.page-title {
+			color: #162521;
+		}
+
+		a {
+			color: #f8b078;
+		}
+
+		a:hover,
+		.widget-area a,
+		.entry-meta span a:hover,
+		.comments-link a {
+			color: #000000;
+		}
+
+		.comments-link a:hover,
+		.widget-area a:hover {
+			color: #f8b078;
+		}
+
+		.socials a::before,
+		.socials a:hover::before {
+			color: #f8b078;
+		}
+
+		.socials a::after,
+		.socials a:hover::after {
+			color: #000000;
+		}
+
+		.bravada-normalizedtags #content .tagcloud a {
+			color: #FFFFFF;
+			background-color: #f8b078;
+		}
+
+		.bravada-normalizedtags #content .tagcloud a:hover {
+			background-color: #000000;
+		}
+
+		#nav-fixed i {
+			background-color: #dbdbdb;
+		}
+
+		#nav-fixed .nav-next:hover i,
+		#nav-fixed .nav-previous:hover i {
+			background-color: #000000;
+		}
+
+		#nav-fixed a:hover+a,
+		#nav-fixed a+a:hover {
+			background-color: rgba(0, 0, 0, 1);
+		}
+
+		#nav-fixed i,
+		#nav-fixed span {
+			color: #FFFFFF;
+		}
+
+		a#toTop::before {
+			color: #f8b078;
+		}
+
+		a#toTop::after {
+			color: #000000;
+		}
+
+		@media (max-width: 800px) {
+			.cryout #footer-bottom .footer-inside {
+				padding-top: 2.5em;
+			}
+
+			.cryout .footer-inside a#toTop {
+				background-color: #f8b078;
+				color: #F3F7F6;
+			}
+
+			.cryout .footer-inside a#toTop:hover {
+				opacity: 0.8;
+			}
+		}
+
+		.entry-meta .icon-metas:before {
+			color: #b5b5b5;
+		}
+
+		#site-title span a::before {
+			width: calc(100% - 1.2em);
+		}
+
+		.bravada-caption-one .main .wp-caption .wp-caption-text {
+			border-bottom-color: #eeeeee;
+		}
+
+		.bravada-caption-two .main .wp-caption .wp-caption-text {
+			background-color: #f5f5f5;
+		}
+
+		.bravada-image-one .entry-content img[class*="align"],
+		.bravada-image-one .entry-summary img[class*="align"],
+		.bravada-image-two .entry-content img[class*='align'],
+		.bravada-image-two .entry-summary img[class*='align'] {
+			border-color: #eeeeee;
+		}
+
+		.bravada-image-five .entry-content img[class*='align'],
+		.bravada-image-five .entry-summary img[class*='align'] {
+			border-color: #f8b078;
+		}
+
+		.entry-summary .excerpt-fade {
+			background-image: linear-gradient(to left, #FFFFFF, transparent);
+		}
+
+		/* diffs */
+		span.edit-link a.post-edit-link,
+		span.edit-link a.post-edit-link:hover,
+		span.edit-link .icon-edit:before {
+			color: #707070;
+		}
+
+		.searchform {
+			border-color: #ebebeb;
+		}
+
+		.entry-meta span,
+		.entry-meta a,
+		.entry-utility span,
+		.entry-utility a,
+		.entry-meta time,
+		#breadcrumbs-nav {
+			color: #a7a7a7;
+		}
+
+		.main #content-masonry .post-thumbnail-container span.bl_categ,
+		.main #content-masonry .post-thumbnail-container .comments-link {
+			background-color: #FFFFFF;
+		}
+
+		.footermenu ul li span.sep {
+			color: #f8b078;
+		}
+
+		.entry-meta a::after,
+		.entry-utility a::after {
+			background: #000000;
+		}
+
+		#header-page-title .category-metas a {
+			color: #f8b078;
+		}
+
+		.entry-meta .author:hover .avatar {
+			border-color: #f8b078;
+		}
+
+		.animated-title span.cry-single.animated-letter,
+		.animated-title span.cry-double.animated-letter {
+			color: #f8b078;
+		}
+
+		span.entry-sticky {
+			color: #000000;
+		}
+
+		#commentform {}
+
+		code,
+		#nav-below .nav-previous a::before,
+		#nav-below .nav-next a::before {
+			background-color: #eeeeee;
+		}
+
+		#nav-below .nav-previous::after,
+		#nav-below .nav-next::after {
+			background-color: #f8b078;
+		}
+
+		pre,
+		.comment-author {
+			border-color: #eeeeee;
+		}
+
+		.commentlist .comment-area,
+		.commentlist .pingback {
+			border-color: #f3f3f3;
+		}
+
+		.commentlist img.avatar {
+			background-color: #FFFFFF;
+		}
+
+		.comment-meta a {
+			color: #bfbfbf;
+		}
+
+		.commentlist .reply a,
+		.commentlist .author-name,
+		.commentlist .author-name a {
+			background-color: #f8b078;
+			color: #FFFFFF;
+		}
+
+		.commentlist .reply a:hover {
+			background-color: #000000;
+		}
+
+		select,
+		input[type],
+		textarea {
+			color: #707070;
+			background-color: #f5f5f5;
+		}
+
+		.sidey select {
+			background-color: #FFFFFF;
+		}
+
+		.searchform .searchsubmit {
+			background: #f8b078;
+		}
+
+		.searchform:hover .searchsubmit {
+			background: #000000;
+		}
+
+		.searchform input[type="search"],
+		.searchform input[type="search"]:hover,
+		.searchform input[type="search"]:focus {
+			background-color: #FFFFFF;
+		}
+
+		input[type]:hover,
+		textarea:hover,
+		select:hover,
+		input[type]:focus,
+		textarea:focus,
+		select:focus {
+			border-color: #dcdcdc;
+		}
+
+		button,
+		input[type="button"],
+		input[type="submit"],
+		input[type="reset"] {
+			background-color: #f8b078;
+			color: #FFFFFF;
+		}
+
+		button:hover,
+		input[type="button"]:hover,
+		input[type="submit"]:hover,
+		input[type="reset"]:hover {
+			background-color: #000000;
+		}
+
+		.comment-form-author input,
+		.comment-form-email input,
+		.comment-form-url input,
+		.comment-form-comment textarea {
+			background-color: #f0f0f0;
+		}
+
+		.comment-form-author input:hover,
+		.comment-form-email input:hover,
+		.comment-form-url input:hover,
+		.comment-form-comment textarea:hover,
+		.comment-form-author input:focus,
+		.comment-form-email input:focus,
+		.comment-form-url input:focus,
+		.comment-form-comment textarea:focus {
+			background-color: #f8b078;
+			color: #FFFFFF;
+		}
+
+		.comment-form-author,
+		.comment-form-email {
+			border-color: #FFFFFF;
+		}
+
+		hr {
+			background-color: #f0f0f0;
+		}
+
+		.cryout-preloader-inside .bounce1 {
+			background-color: #f8b078;
+		}
+
+		.cryout-preloader-inside .bounce2 {
+			background-color: #000000;
+		}
+
+		.page-header.pad-container {
+			background-color: #FFFFFF;
+		}
+
+		/* gutenberg */
+		.wp-block-image.alignwide {
+			margin-left: calc((0% + 4em) * -1);
+			margin-right: calc((0% + 4em) * -1);
+		}
+
+		.wp-block-image.alignwide img {
+			width: calc(100% + 8em);
+			max-width: calc(100% + 8em);
+		}
+
+		.has-accent-1-color,
+		.has-accent-1-color:hover {
+			color: #f8b078;
+		}
+
+		.has-accent-2-color,
+		.has-accent-2-color:hover {
+			color: #000000;
+		}
+
+		.has-headings-color,
+		.has-headings-color:hover {
+			color: #162521;
+		}
+
+		.has-sitetext-color,
+		.has-sitetext-color:hover {
+			color: #707070;
+		}
+
+		.has-sitebg-color,
+		.has-sitebg-color:hover {
+			color: #FFFFFF;
+		}
+
+		.has-accent-1-background-color {
+			background-color: #f8b078;
+		}
+
+		.has-accent-2-background-color {
+			background-color: #000000;
+		}
+
+		.has-headings-background-color {
+			background-color: #162521;
+		}
+
+		.has-sitetext-background-color {
+			background-color: #707070;
+		}
+
+		.has-sitebg-background-color {
+			background-color: #FFFFFF;
+		}
+
+		.has-small-font-size {
+			font-size: 13px;
+		}
+
+		.has-regular-font-size {
+			font-size: 16px;
+		}
+
+		.has-large-font-size {
+			font-size: 19px;
+		}
+
+		.has-larger-font-size {
+			font-size: 23px;
+		}
+
+		.has-huge-font-size {
+			font-size: 23px;
+		}
+
+		/* woocommerce */
+		.woocommerce-thumbnail-container .woocommerce-buttons-container a,
+		.woocommerce-page #respond input#submit.alt,
+		.woocommerce a.button.alt,
+		.woocommerce-page button.button.alt,
+		.woocommerce input.button.alt,
+		.woocommerce #respond input#submit,
+		.woocommerce a.button,
+		.woocommerce button.button,
+		.woocommerce input.button {}
+
+		.woocommerce ul.products li.product .woocommerce-loop-category__title,
+		.woocommerce ul.products li.product .woocommerce-loop-product__title,
+		.woocommerce ul.products li.product h3,
+		.woocommerce div.product .product_title,
+		.woocommerce .woocommerce-tabs h2 {
+			font-family: Muli;
+		}
+
+		.woocommerce ul.products li.product .woocommerce-loop-category__title,
+		.woocommerce ul.products li.product .woocommerce-loop-product__title,
+		.woocommerce ul.products li.product h3,
+		.woocommerce .star-rating {
+			color: #000000;
+		}
+
+		.woocommerce #respond input#submit,
+		.woocommerce a.button,
+		.woocommerce button.button,
+		.woocommerce input.button {
+			background-color: #f8b078;
+			color: #FFFFFF;
+			line-height: 1.8;
+		}
+
+		.woocommerce #respond input#submit:hover,
+		.woocommerce a.button:hover,
+		.woocommerce button.button:hover,
+		.woocommerce input.button:hover {
+			background-color: #000000;
+			color: #FFFFFF;
+		}
+
+		.woocommerce-page #respond input#submit.alt,
+		.woocommerce a.button.alt,
+		.woocommerce-page button.button.alt,
+		.woocommerce input.button.alt {
+			color: #f8b078;
+			line-height: 1.8;
+		}
+
+		.woocommerce-page #respond input#submit.alt::after,
+		.woocommerce a.button.alt::after,
+		.woocommerce-page button.button.alt::after,
+		.woocommerce input.button.alt::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			outline: 2px solid;
+			-webkit-transition: .3s ease all;
+			transition: .3s ease all;
+		}
+
+		.woocommerce-page #respond input#submit.alt:hover::after,
+		.woocommerce a.button.alt:hover::after,
+		.woocommerce-page button.button.alt:hover::after,
+		.woocommerce input.button.alt:hover::after {
+			opacity: 0;
+			-webkit-transform: scale(1.2, 1.4);
+			transform: scale(1.2, 1.4);
+		}
+
+		.woocommerce-page #respond input#submit.alt:hover,
+		.woocommerce a.button.alt:hover,
+		.woocommerce-page button.button.alt:hover,
+		.woocommerce input.button.alt:hover {
+			color: #000000;
+		}
+
+		.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+			border-bottom-color: #FFFFFF;
+		}
+
+		.woocommerce #respond input#submit.alt.disabled,
+		.woocommerce #respond input#submit.alt.disabled:hover,
+		.woocommerce #respond input#submit.alt:disabled,
+		.woocommerce #respond input#submit.alt:disabled:hover,
+		.woocommerce #respond input#submit.alt[disabled]:disabled,
+		.woocommerce #respond input#submit.alt[disabled]:disabled:hover,
+		.woocommerce a.button.alt.disabled,
+		.woocommerce a.button.alt.disabled:hover,
+		.woocommerce a.button.alt:disabled,
+		.woocommerce a.button.alt:disabled:hover,
+		.woocommerce a.button.alt[disabled]:disabled,
+		.woocommerce a.button.alt[disabled]:disabled:hover,
+		.woocommerce button.button.alt.disabled,
+		.woocommerce button.button.alt.disabled:hover,
+		.woocommerce button.button.alt:disabled,
+		.woocommerce button.button.alt:disabled:hover,
+		.woocommerce button.button.alt[disabled]:disabled,
+		.woocommerce button.button.alt[disabled]:disabled:hover,
+		.woocommerce input.button.alt.disabled,
+		.woocommerce input.button.alt.disabled:hover,
+		.woocommerce input.button.alt:disabled,
+		.woocommerce input.button.alt:disabled:hover,
+		.woocommerce input.button.alt[disabled]:disabled,
+		.woocommerce input.button.alt[disabled]:disabled:hover {
+			background-color: #000000;
+			color: #fff;
+		}
+
+		.woocommerce div.product .product_title,
+		.woocommerce ul.products li.product .price,
+		.woocommerce div.product p.price,
+		.woocommerce div.product span.price {
+			color: #000000
+		}
+
+		.woocommerce .quantity .qty {
+			background-color: #eeeeee;
+		}
+
+		.woocommerce-checkout #payment {
+			background: #f5f5f5;
+		}
+
+		.woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
+			background: #000000;
+		}
+
+		.woocommerce div.product .products>h2,
+		.woocommerce .cart-collaterals h2 {
+			font-family: Playfair Display;
+			font-size: 1.2em;
+			font-weight: 700;
+			line-height: 2;
+			;
+		}
+
+		.woocommerce div.product .products>h2::after,
+		.woocommerce .cart-collaterals h2::after {
+			background-color: #f8b078;
+		}
+
+		.main .entry-content,
+		.main .entry-summary {
+			text-align: inherit;
+		}
+
+		.main p,
+		.main ul,
+		.main ol,
+		.main dd,
+		.main pre,
+		.main hr {
+			margin-bottom: 1em;
+		}
+
+		.main .entry-content p {
+			text-indent: 0em;
+		}
+
+		.main a.post-featured-image {
+			background-position: center center;
+		}
+
+		#header-widget-area {
+			width: 33%;
+			right: 10px;
+		}
+
+		.bravada-stripped-table .main thead th,
+		.bravada-bordered-table .main thead th,
+		.bravada-stripped-table .main td,
+		.bravada-stripped-table .main th,
+		.bravada-bordered-table .main th,
+		.bravada-bordered-table .main td {
+			border-color: #e9e9e9;
+		}
+
+		.bravada-clean-table .main th,
+		.bravada-stripped-table .main tr:nth-child(even) td,
+		.bravada-stripped-table .main tr:nth-child(even) th {
+			background-color: #f8f8f8;
+		}
+
+		.bravada-cropped-featured .main .post-thumbnail-container {
+			height: 300px;
+		}
+
+		.bravada-responsive-featured .main .post-thumbnail-container {
+			max-height: 300px;
+			height: auto;
+		}
+
+		article.hentry .article-inner,
+		#content-masonry article.hentry .article-inner {
+			padding: 0%;
+		}
+
+		.site-header-bottom {
+			height: 75px;
+		}
+
+		.site-header-bottom .site-header-inside {
+			height: 75px;
+		}
+
+		.menu-search-animated,
+		.menu-burger,
+		#sheader-container,
+		.identity,
+		#nav-toggle {
+			height: 75px;
+			line-height: 75px;
+		}
+
+		#access div>ul>li>a,
+		#access ul li[class*="icon"]::before {
+			line-height: 75px;
+		}
+
+		nav#mobile-menu {
+			padding-top: 85px;
+		}
+
+		body.admin-bar nav#mobile-menu {
+			padding-top: 117px;
+		}
+
+		#branding {
+			height: 75px;
+		}
+
+		.bravada-responsive-headerimage #masthead #header-image-main-inside {
+			max-height: 1080px;
+		}
+
+		.bravada-cropped-headerimage #masthead #header-image-main-inside {
+			height: 1080px;
+		}
+
+		#site-text {
+			display: none;
+		}
+
+		#header-widget-area {
+			top: 85px;
+		}
+
+		.bravada-landing-page .lp-blocks-inside,
+		.bravada-landing-page .lp-boxes-inside,
+		.bravada-landing-page .lp-text-inside,
+		.bravada-landing-page .lp-posts-inside,
+		.bravada-landing-page .lp-page-inside,
+		.bravada-landing-page .lp-section-header,
+		.bravada-landing-page .content-widget {
+			max-width: 1240px;
+		}
+
+		@media (min-width: 960px) {
+			.bravada-landing-page .lp-blocks.lp-blocks1 .lp-blocks-inside {
+				max-width: calc(1240px - 5em);
+				background-color: #FFFFFF;
+			}
+		}
+
+		#header-page-title #header-page-title-inside,
+		.lp-staticslider .staticslider-caption,
+		.seriousslider.seriousslider-theme .seriousslider-caption {
+			max-width: 1240px;
+			max-width: 85%;
+			padding-top: 85px;
+		}
+
+		@media (max-width: 1024px) {
+
+			#header-page-title #header-page-title-inside,
+			.lp-staticslider .staticslider-caption,
+			.seriousslider.seriousslider-theme .seriousslider-caption {
+				max-width: 100%;
+			}
+		}
+
+		.bravada-landing-page .content-widget {
+			margin: 0 auto;
+		}
+
+		a.staticslider-button,
+		.seriousslider-theme .seriousslider-caption-buttons a {
+			background-color: #f8b078;
+		}
+
+		a.staticslider-button:hover,
+		.seriousslider-theme .seriousslider-caption-buttons a:hover {
+			background-color: #000000;
+		}
+
+		.widget-title,
+		#comments-title,
+		#reply-title,
+		.related-posts .related-main-title,
+		.main .page-title,
+		#nav-below em,
+		.lp-text .lp-text-title,
+		.lp-boxes-animated .lp-box-title {
+			background-image: linear-gradient(to bottom, rgba(248, 176, 120, 0.4) 0%, rgba(248, 176, 120, 0.4) 100%);
+		}
+
+		.lp-blocks {
+			background-color: #F9F7F5;
+		}
+
+		.lp-boxes {
+			background-color: #F8F8F8;
+		}
+
+		.lp-boxes .lp-boxes-inside::before {
+			background-color: #f8b078;
+		}
+
+		.lp-boxes~.lp-boxes .lp-boxes-inside::before {
+			background-color: #000000;
+		}
+
+		.lp-boxes~.lp-boxes~.lp-boxes .lp-boxes-inside::before {
+			background-color: #f8b078;
+		}
+
+		.lp-text {
+			background-color: #EEEBE9;
+		}
+
+		#lp-posts,
+		#lp-page {
+			background-color: #F3F7F6;
+		}
+
+		.lp-block {
+			background-color: #FFFFFF;
+		}
+
+		.lp-block i[class^="blicon"]::before {
+			color: #000000;
+		}
+
+		.lp-block .lp-block-title,
+		.lp-text .lp-text-title {
+			color: #162521;
+		}
+
+		.lp-block .lp-block-title::after {
+			background-color: #f8b078;
+		}
+
+		.lp-blocks1 .lp-block i[class^="blicon"]+i[class^="blicon"]::before {
+			color: #000000;
+		}
+
+		.lp-block-readmore {
+			color: #c0c0c0;
+		}
+
+		.lp-block-readmore:hover {
+			color: #f8b078;
+		}
+
+		.lp-text-title {
+			color: #000000;
+		}
+
+		.lp-text-inside .lp-text-background {
+			background-color: #FFFFFF;
+		}
+
+		.lp-boxes .lp-box {
+			background-color: #FFFFFF;
+		}
+
+		.lp-boxes-animated .box-overlay {
+			background-color: #000000;
+		}
+
+		.lp-boxes-animated .lp-box-readmore {
+			color: #f8b078;
+		}
+
+		.lp-boxes-static .box-overlay {
+			background-color: #f8b078;
+		}
+
+		.lp-box-title {
+			color: #162521;
+		}
+
+		.lp-box-title:hover {
+			color: #f8b078;
+		}
+
+		.lp-boxes-1 .lp-box .lp-box-image {
+			height: 0px;
+		}
+
+		#cryout_ajax_more_trigger,
+		.lp-port-readmore {
+			color: #000000;
+		}
+
+		.lpbox-rnd1 {
+			background-color: #c1c1c1;
+		}
+
+		.lpbox-rnd2 {
+			background-color: #bcbcbc;
+		}
+
+		.lpbox-rnd3 {
+			background-color: #b7b7b7;
+		}
+
+		.lpbox-rnd4 {
+			background-color: #b2b2b2;
+		}
+
+		.lpbox-rnd5 {
+			background-color: #adadad;
+		}
+
+		.lpbox-rnd6 {
+			background-color: #a8a8a8;
+		}
+
+		.lpbox-rnd7 {
+			background-color: #a3a3a3;
+		}
+
+		.lpbox-rnd8 {
+			background-color: #9e9e9e;
+		}

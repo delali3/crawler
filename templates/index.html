@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Video Link Checker</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/front-styles.css')}}" media="all">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" media="all">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <noscript>
+        <style>
+            * {
+                font-family: 'Montserrat', sans-serif !important;
+            }
+
+            .cryout .cryout-preloader {
+                display: none;
+            }
+
+            .cryout img[loading="lazy"] {
+                opacity: 1;
+            }
+        </style>
+    </noscript>
+    <link rel="icon" href="{{url_for('static', filename='images/fav/fav-32x32.png')}}" sizes="32x32">
+    <link rel="icon" href="{{url_for('static', filename='images/fav/fav-192x192.png')}}" sizes="192x192">
+    <link rel="apple-touch-icon" href="{{url_for('static', filename='images/fav/fav-180x180.png')}}">
+</head>
+
+<body
+    class="home page-template-default page page-id-2 wp-custom-logo wp-embed-responsive is_chrome bravada-landing-page bravada-image-none bravada-caption-one bravada-totop-normal bravada-stripped-table bravada-over-menu bravada-menu-right bravada-topsection-normal bravada-cropped-headerimage bravada-fullscreen-headerimage bravada-responsive-featured bravada-magazine-one bravada-magazine-layout bravada-comhide-in-posts bravada-comhide-in-pages bravada-comment-placeholder bravada-comment-icons bravada-normalizedtags bravada-animated-title bravada-lazy-noanimation bravada-article-animation-fade"
+    itemscope="" itemtype="http://schema.org/WebPage">
+    <a class="skip-link screen-reader-text" href="./main" title="Skip to content"> Skip
+        to content </a>
+
+    <div id="site-wrapper">
+
+
+        <div id="content" class="cryout">
+
+            <div id="container" class="bravada-landing-page one-column">
+                <main id="main" class="main">
+                    <style>
+                        form {
+                            background: white;
+                            padding: 20px;
+                            border-radius: 8px;
+                            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                        }
+
+                        label {
+                            font-weight: bold;
+                        }
+
+                        input {
+                            width: 250px;
+                        }
+
+                        input[type="text"] {
+                            width: 100%;
+                            padding: 8px;
+                            margin: 10px 0;
+                            border-radius: 4px;
+                            border: 1px solid #ddd;
+                            box-sizing: border-box;
+                        }
+
+                        input[type="submit"] {
+                            background-color: #4CAF50;
+                            color: white;
+                            padding: 10px 20px;
+                            border: none;
+                            border-radius: 4px;
+                            cursor: pointer;
+                            font-size: 16px;
+                        }
+
+                        input[type="submit"]:hover {
+                            background-color: #45a049;
+                        }
+
+                        input[type="submit"]:disabled {
+                            /* Styles for the disabled state */
+                            background-color: #cccccc;
+                            color: #666666;
+                            cursor: not-allowed;
+                        }
+
+
+                        .response-message {
+                            margin-top: 20px;
+                            padding: 10px;
+                            border-radius: 5px;
+                            color: #155724;
+                            /* Dark green text */
+                            background-color: #d4edda;
+                            /* Light green background */
+                            border: 1px solid #c3e6cb;
+                            text-align: center;
+                        }
+
+                        #loadingIndicator {
+                            margin-top: 20px;
+                        }
+                    </style>
+                    <section class="lp-slider">
+                        <div class="lp-staticslider">
+                            <img class="lp-staticslider-image" alt="Digital Ethnic Futures Consortium"
+                                src="{{url_for('static', filename='images/cropped-galaxy-g398f77feb_1280.jpg')}}">
+                            <div class="staticslider-caption animated-title">
+                                <div class="staticslider-caption-inside">
+                                    <!-- <h2 class="staticslider-caption-title"><span>Enter Keyword</span></h2> -->
+                                    <span class="staticslider-sep"></span>
+                                    <!-- <h6 class="text-left lp-text-title">Enter your prompt here</h6> -->
+                                    <form method="post" id="videoForm"
+                                        style="text-align: left!important; padding: 10px;">
+                                        <label style="color: black;" for="video_url">Video URL:</label><br>
+                                        <input type="text" id="video_url" name="video_url"
+                                            value="https://youtu.be/7tkNPdCsI-A?si=EXS-HKKnSb467cHi" required><br>
+
+                                        <label style="color: black;" for="target_site">Target Website URL:</label><br>
+                                        <input type="text" id="target_site" name="target_site"
+                                            value="https://en.savefrom.net" required><br>
+
+                                        <input type="submit" id="submitButton" value="Check">
+                                    </form>
+
+                                    <div id="loadingIndicator" style="display: none;">
+                                        Processing your request...
+                                    </div>
+
+                                    {% if message %}
+                                    <section style="background-color: #ffffff; text-align: left; color: black;"
+                                        class="lp-text" id="lp-text-one">
+                                        <div class="lp-text-inside">
+                                            <div class="lp-text-card">
+                                                <div class="lp-text-content">
+                                                    <p class="response-message">{{ message }}</p>
+                                                </div>
+                                            </div>
+                                        </div><!-- .lp-text-inside -->
+
+                                    </section>
+
+                                    {% endif %}
+
+                                </div>
+                            </div>
+                            <a href="./#lp-text-one" class="meta-arrow" tabindex="-1">
+                                <i class="icon-arrow" title="Read more"></i>
+                            </a>
+                        </div><!-- .lp-staticslider -->
+
+                    </section>
+                </main><!-- #main -->
+            </div><!-- #container -->
+
+
+        </div><!-- #main -->
+
+    </div><!-- site-wrapper -->
+    
+    
+    <script>
+        document.getElementById('videoForm').onsubmit = function () {
+            document.getElementById('loadingIndicator').style.display = 'block';
+            document.getElementById('submitButton').disabled = true;
+        };
+    </script>
+
+</html>

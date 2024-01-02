@@ -1,0 +1,38 @@
+/* CSS Document */
+.header_image{
+	width:100%;
+	height:auto;
+	overflow:hidden;
+	display:inline-block;
+	position:relative;
+	text-align:center;
+	
+}
+body.post-type-archive-product .header_image:nth-of-type(1),
+body.single-product .header_image:nth-of-type(1){
+	/*display: none;*/
+}
+.header_image h2{
+	position:relative;
+	margin: 0 auto;
+}
+.header_image .wphi_breadcrumb{
+	position:absolute;
+	bottom: 20px;
+}
+.wphi_breadcrumb ul {
+	margin:0;
+	padding: 10px 34px;
+}
+.wphi_breadcrumb ul li{
+	float:left;
+	font-size: 20px;
+	margin-right: 30px;
+	line-height: 18px;
+	color:#333;
+}
+.wphi-video{
+	margin:0 auto;
+	width:100%;
+}
+
